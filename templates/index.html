@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Оплата через LiqPay</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Симуляція платежу через LiqPay</h1>
+        <form method="POST" action="https://www.liqpay.ua/api/3/checkout" accept-charset="utf-8">
+            <input type="hidden" name="data" value="{{ data }}" />
+            <input type="hidden" name="signature" value="{{ signature }}" />
+            <input type="submit" value="Оплатити 50 грн" />
+        </form>
+    </div>
+</body>
+</html>
